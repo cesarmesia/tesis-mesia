@@ -136,7 +136,10 @@ export function CardDrawer({
             </div>
 
             <Button asChild variant="outline">
-              <Link href={`/chat?hallazgo=${hallazgo.id}`}>
+              <Link
+                href={`/chat?hallazgo=${hallazgo.id}`}
+                onClick={() => onOpenChange(false)}
+              >
                 <MessageSquareText className="size-4" /> Preguntar al asistente
               </Link>
             </Button>
