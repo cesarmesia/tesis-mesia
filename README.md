@@ -21,12 +21,12 @@ Zustand (persist a `localStorage`) · @dnd-kit · @tanstack/react-table · zod �
 
 ```bash
 npm install
-cp .env.local.example .env.local   # opcional: agrega tu ANTHROPIC_API_KEY
+cp .env.local.example .env.local   # opcional: agrega tu OPENAI_API_KEY
 npm run dev                         # http://localhost:3000
 ```
 
 > El chatbot funciona **sin** API key en modo local (fallback). Para respuestas generativas
-> con LLM, coloca `ANTHROPIC_API_KEY` en `.env.local`. La key **solo** se usa en el servidor
+> con LLM, coloca `OPENAI_API_KEY` en `.env.local`. La key **solo** se usa en el servidor
 > (`src/app/api/chat/route.ts`); nunca se expone al cliente.
 
 ### Scripts
@@ -85,7 +85,7 @@ Monto en riesgo = `presupuesto × (IRP/100) × factorExposición` (editable en `
 
 1. Sube el repo a GitHub.
 2. Importa el proyecto en Vercel (detecta Next.js automáticamente).
-3. Configura la variable de entorno `ANTHROPIC_API_KEY` (y opcional `ANTHROPIC_MODEL`).
+3. Configura la variable de entorno `OPENAI_API_KEY` (y opcional `OPENAI_MODEL`).
 4. Deploy.
 
 ## Estructura
